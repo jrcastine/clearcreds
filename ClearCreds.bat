@@ -16,3 +16,4 @@ FOR /F "tokens=1,2 delims= " %%G IN (%TEMP%\tokensonly.txt) DO cmdkey.exe /delet
 @Echo now cleanup our capture and token files
 del "%TEMP%\List.txt" /s /f /q
 del "%TEMP%\tokensonly.txt" /s /f /q
+@Echo We are done!
