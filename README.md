@@ -1,4 +1,4 @@
-# clearcreds
+# ClearCreds
 DOS / CMD batch file to remove all 'hidden' credentials from a Windows 7, 8 and/or 10 machine
 
 This uses the inbuilt cmdkey tool (https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey) to clear out all saved credentials that are NOT showing in the Windows Credential Manager.
