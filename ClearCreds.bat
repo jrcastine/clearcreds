@@ -1,11 +1,9 @@
 @Echo off
-@Echo This is a DOS batch file that you would run from a cmd prompt, logged in as a user and NOT an admin.
-@echo ***
-@Echo This is useful in environments where PowerShell is locked down by GPO and users cannot access network resources
-@Echo and where there are some 'hidden' saved credentials blocking access to network resources.
+@Echo ClearCreds
+@Echo DOS / CMD batch file to remove all cached credentials from a Windows 7, 8 and/or 10 machine as well as Windows Sever up to and including 2019.
+@Echo https://github.com/jrcastine/clearcreds
 @Echo ***
-@Echo This will use the cmdkey utility to create a text file with the saved credentials, then parse out the tokens
-@Echo and ultimately delete all those tokens.
+@Echo This is a DOS batch file that you would run from a cmd prompt, logged in as a user and NOT an admin.
 @Echo ***
 @Echo capture all the stored credentials
 cmdkey.exe /list > "%TEMP%\List.txt"
