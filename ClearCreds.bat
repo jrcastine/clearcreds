@@ -1,6 +1,6 @@
 @Echo off
 @Echo ClearCreds
-@Echo DOS / CMD batch file to remove all cached credentials from a Windows 7, 8 and/or 10 machine as well as Windows Sever up to and including 2019.
+@Echo DOS / CMD batch file to remove all cached credentials from a Windows 7, 8, 10 and/or 11 machine as well as Windows Sever up to and including 2025.
 @Echo https://github.com/jrcastine/clearcreds
 @Echo ***
 @Echo This is a DOS batch file that you would run from a cmd prompt, logged in as a user and NOT an admin.
