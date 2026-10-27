@@ -8,3 +8,17 @@ This batch file will delete all the saved credentials for the logged in user.  U
 You simply run this script from the logged in user's desktop. DO NOT run as administrator, this needs to run as the locally logged in user. Local admin rights are not required  for this script to clean up credentials.
 
 If you are a local machine admin or AD domain admin, this can be run to clear out your credentials from a server or workstation so as to not leave a credentialed session behind that could be exploited.
+
+## PowerShell version
+
+A PowerShell port is also available as `ClearCreds.ps1`. It performs the same
+steps as the batch file but works in memory (no temp files) and correctly
+handles credential targets that contain spaces.
+
+Run it from a PowerShell prompt as the logged-in user (not as administrator):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\ClearCreds.ps1
+```
+
+Local admin rights are not required.
