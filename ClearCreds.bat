@@ -10,7 +10,7 @@ cmdkey.exe /list > "%TEMP%\List.txt"
 @Echo sort out the tokens from our capture file
 findstr.exe Target "%TEMP%\List.txt" > "%TEMP%\tokensonly.txt"
 @Echo now do a loop to remove each saved credential for all the tokens we have
-FOR /F "tokens=1,2 delims= " %%G IN (%TEMP%\tokensonly.txt) DO cmdkey.exe /delete:%%H
+FOR /F "tokens=1,* delims= " %%G IN (%TEMP%\tokensonly.txt) DO cmdkey.exe /delete:"%%H"
 @Echo now cleanup our capture and token files
 del "%TEMP%\List.txt" /s /f /q
 del "%TEMP%\tokensonly.txt" /s /f /q
